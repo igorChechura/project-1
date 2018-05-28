@@ -43,10 +43,8 @@ b, strong
 .grid
 	display: grid
 
-.header
-	
+.header	
 	background-color: #fff
-	outline: 1px solid black
 
 .wrapper
 	max-width: 1200px
@@ -54,9 +52,6 @@ b, strong
 	padding: 0 10px
 	margin: auto
 	grid-template-columns: 1fr auto
-	align-content: center
-
-.header-logo
 	align-content: center
 
 .main-menu
@@ -84,6 +79,27 @@ b, strong
 		&.active a
 			background-color: $accent-orange
 			color: #ffffff
+
+section
+	padding: 100px
+	h2
+		font-family: gotham-myproject, sans-serif
+		font-weight: 800
+		text-transform: uppercase
+		font-size: 32px
+		line-height: 24px
+		text-align: center
+	p
+		font-family: gotham-myproject, sans-serif
+		font-size: 16px
+		text-align: center
+
+.banner
+	background-color: $accent-blue
+	h2
+		color: #fff
+	.request-form
+		grid-template-columns: repeat(3, 1fr) auto
 
 
 

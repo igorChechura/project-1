@@ -10,6 +10,8 @@
 	color: #fff
 
 body
+	margin: 0
+	padding: 0
 	font-size: 16px
 	min-width: 320px
 	position: relative
@@ -17,8 +19,7 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
-	input, textarea
-		border: #666 1px solid
+	input, textarea		
 		outline: none
 		&:focus:required:invalid
 			border-color: red
@@ -37,22 +38,48 @@ body
 
 b, strong
 	font-weight: bold
+p, h2
+	margin: 0
+
+
+
+
 
 // Custom styles
 
 .grid
 	display: grid
 
-.header	
-	background-color: #fff
-
 .wrapper
-	max-width: 1200px
-	height: 94px
+	max-width: 1200px	
 	padding: 0 10px
 	margin: auto
-	grid-template-columns: 1fr auto
-	align-content: center
+
+input, textarea
+	font-family: FontAwesome, sans-serif
+	padding-left: 16px
+	padding-right: 16px
+	font-size: 13px
+	border: none
+	outline: none
+	border-radius: 2px
+
+.button
+	font-size: 14px 
+	text-transform: uppercase
+	color: #fff
+	cursor: pointer
+	border: none
+	border-radius: 2px
+	padding: 14px 44px
+	background-color: $accent-orange
+
+.header	
+	background-color: #fff
+	.wrapper
+		height: 94px
+		grid-template-columns: 1fr auto
+		align-content: center
 
 .main-menu
 	padding: 0
@@ -81,7 +108,7 @@ b, strong
 			color: #ffffff
 
 section
-	padding: 100px
+	padding: 100px 0
 	h2
 		font-family: gotham-myproject, sans-serif
 		font-weight: 800
@@ -92,14 +119,22 @@ section
 	p
 		font-family: gotham-myproject, sans-serif
 		font-size: 16px
-		text-align: center
+		text-align: center	
 
 .banner
 	background-color: $accent-blue
-	h2
+	h2 
+		margin-bottom: 8px
 		color: #fff
+	p
+		margin-bottom: 30px
+		color: #fff
+
 	.request-form
+		padding: 0 40px
+		margin-bottom: 30px
 		grid-template-columns: repeat(3, 1fr) auto
+		grid-gap: 8px
 
 
 

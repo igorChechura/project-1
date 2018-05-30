@@ -2,6 +2,9 @@ $(function() {
 
 	// Custom JS
 
-	// $('#main-menu').smartmenus();
+	$('.owl-carousel').owlCarousel({
+		items: 1,
+		dots: true
+	});
 
 });

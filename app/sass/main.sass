@@ -38,7 +38,7 @@ body
 
 b, strong
 	font-weight: bold
-p, h2
+p,h1, h2, h3, h4, h5, h6
 	margin: 0
 
 
@@ -89,6 +89,7 @@ section
 		font-size: 32px
 		line-height: 24px
 		text-align: center
+		margin-bottom: 8px
 	p
 		font-family: gotham-myproject, sans-serif
 		font-size: 16px
@@ -134,7 +135,6 @@ section
 .banner
 	background-color: $accent-blue
 	h2 
-		margin-bottom: 8px
 		color: #fff
 	p
 		margin-bottom: 30px
@@ -183,6 +183,32 @@ section
 
 .services
 	height: 300px
-
+	padding-top: 202px
+	background-color: #fff
+	h2 
+		color: $h-text
+	p
+		color: $h-text
+	&-content
+		margin-top: 67px
+		grid-template-columns: 1fr 1fr
+		grid-gap: 68px
+		font-family: lato-myproject, sans-serif
+		.svg-inline--fa
+			float: left
+		h3
+			margin-bottom: 9px
+			margin-left: 50px
+			text-transform: uppercase
+			font-size: 16px
+			font-weight: bold
+			color: $h-text
+		p
+			margin-left: 50px
+			text-align: left
+			line-height: 22px
+			font-size: 13px
+			color: $text
+			
 
 @import "media" // Always at the end

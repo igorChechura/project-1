@@ -54,6 +54,7 @@ p, h2
 	max-width: 1200px	
 	padding: 0 10px
 	margin: auto
+	position: relative
 
 input, textarea
 	font-family: FontAwesome, sans-serif
@@ -108,7 +109,9 @@ input, textarea
 			color: #ffffff
 
 section
-	padding: 100px 0
+	padding-top: 100px
+
+.wrapper	
 	h2
 		font-family: gotham-myproject, sans-serif
 		font-weight: 800
@@ -123,6 +126,7 @@ section
 
 .banner
 	background-color: $accent-blue
+	//padding-bottom: 346px
 	h2 
 		margin-bottom: 8px
 		color: #fff
@@ -132,12 +136,24 @@ section
 
 	.request-form
 		padding: 0 40px
-		margin-bottom: 30px
 		grid-template-columns: repeat(3, 1fr) auto
 		grid-gap: 8px
+		
+.laptop
+	width: 648px
+	height: 346px
+	margin: auto
+	position: relative
+	&-inner
+		width: 648px
+		height: 344px
+		position: absolute
+		top: 66px
+		background-image: url(../img/laptop.png)
+		background-repeat: no-repeat
 
-i.fas
-	color: #000
+.services
+	height: 300px
 
 
 @import "media" // Always at the end

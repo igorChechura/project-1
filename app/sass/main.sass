@@ -47,6 +47,9 @@ p, h2
 
 // Custom styles
 
+
+// Common styles
+
 .grid
 	display: grid
 
@@ -74,6 +77,24 @@ input, textarea
 	border-radius: 2px
 	padding: 14px 44px
 	background-color: $accent-orange
+
+section
+	padding-top: 100px
+
+.wrapper	
+	h2
+		font-family: gotham-myproject, sans-serif
+		font-weight: 800
+		text-transform: uppercase
+		font-size: 32px
+		line-height: 24px
+		text-align: center
+	p
+		font-family: gotham-myproject, sans-serif
+		font-size: 16px
+		text-align: center	
+
+// Header
 
 .header	
 	background-color: #fff
@@ -108,21 +129,7 @@ input, textarea
 			background-color: $accent-orange
 			color: #ffffff
 
-section
-	padding-top: 100px
-
-.wrapper	
-	h2
-		font-family: gotham-myproject, sans-serif
-		font-weight: 800
-		text-transform: uppercase
-		font-size: 32px
-		line-height: 24px
-		text-align: center
-	p
-		font-family: gotham-myproject, sans-serif
-		font-size: 16px
-		text-align: center	
+// Banner section
 
 .banner
 	background-color: $accent-blue
@@ -150,6 +157,29 @@ section
 		top: 66px
 		background-image: url(../img/laptop.png)
 		background-repeat: no-repeat
+
+.owl-carousel
+	padding-top: 83px
+	.owl-stage-outer
+		width: 445px
+		margin-left: 103px
+	.owl-dots
+		margin-top: 84px
+		display: grid
+		grid-template-columns: repeat(3, auto)
+		grid-gap: 7px
+		justify-content: center
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot
+	width: 15px
+	height: 15px
+	border: 2px solid #dedfe0
+	border-radius: 50%
+	outline: none
+	transition: border-color .5s ease
+	&.active
+		border-color: #21aade
+
+// Sevices section
 
 .services
 	height: 300px

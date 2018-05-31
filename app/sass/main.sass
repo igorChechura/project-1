@@ -79,7 +79,7 @@ input, textarea
 	background-color: $accent-orange
 
 section
-	padding-top: 100px
+	padding-top: 100px	
 
 .wrapper	
 	h2
@@ -182,8 +182,8 @@ section
 // Sevices section
 
 .services
-	height: 300px
 	padding-top: 202px
+	padding-bottom: 152px
 	background-color: #fff
 	h2 
 		color: $h-text
@@ -204,7 +204,6 @@ section
 			&:hover
 				.svg-inline--fa
 					color: $accent-orange
-
 		h3
 			margin-bottom: 9px
 			margin-left: 76px
@@ -218,6 +217,39 @@ section
 			line-height: 22px
 			font-size: 13px
 			color: $text
+
+// About section
+
+.about
+	background-color: $accent-orange
+	background-repeat: no-repeat
+	background-size: 50%
+	padding-top: 162px
+	padding-bottom: 174px
+	.wrapper
+		grid-template-columns: 1fr 1fr
+	&-content
+		grid-column-start: 2
+		padding-left: 80px
+		color: #fff
+		h2
+			text-align: left
+			font-size: 30px
+			margin-bottom: 20px
+		p
+			text-align: left
+			font-family: opensans-myproject, sans-serif
+			font-size: 13px
+			line-height: 24px			
+			margin-bottom: 30px
+		a.button
+			display: inline-block
+			border: 1px solid #e7ad48
+			text-decoration: none
+			font-family: lato-myproject, sans-serif
+			transition: background-color 0.25s ease
+			&:hover
+				background-color: $accent-blue
 			
 
 @import "media" // Always at the end

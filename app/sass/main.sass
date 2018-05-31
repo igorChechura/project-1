@@ -221,35 +221,39 @@ section
 // About section
 
 .about
-	background-color: $accent-orange
-	background-repeat: no-repeat
-	background-size: 50%
-	padding-top: 162px
-	padding-bottom: 174px
-	.wrapper
-		grid-template-columns: 1fr 1fr
-	&-content
-		grid-column-start: 2
-		padding-left: 80px
-		color: #fff
-		h2
-			text-align: left
-			font-size: 30px
-			margin-bottom: 20px
-		p
-			text-align: left
-			font-family: opensans-myproject, sans-serif
-			font-size: 13px
-			line-height: 24px			
-			margin-bottom: 30px
-		a.button
-			display: inline-block
-			border: 1px solid #e7ad48
-			text-decoration: none
-			font-family: lato-myproject, sans-serif
-			transition: background-color 0.25s ease
-			&:hover
-				background-color: $accent-blue
+	grid-template-columns: 1fr 1fr
+	&-left
+		background-size: cover
+		background-position: center
+	&-right
+		background-color: $accent-orange
+		grid-template-columns: minmax(min-content, 600px)
+		padding-right: 30px
+		.about-content
+			padding-left: 80px
+			padding-top: 162px
+			padding-bottom: 174px
+			color: #fff
+			h2
+				font-size: 30px
+				font-family: gotham-myproject, sans-serif
+				text-transform: uppercase
+				margin-bottom: 20px	
+			p				
+				font-family: opensans-myproject, sans-serif
+				font-size: 13px
+				line-height: 24px			
+				margin-bottom: 30px
+			a.button
+				display: inline-block
+				border: 1px solid #e7ad48
+				text-decoration: none
+				font-family: lato-myproject, sans-serif
+				transition: background-color 0.25s ease
+				&:hover
+					background-color: $accent-blue
+
+
 			
 
 @import "media" // Always at the end

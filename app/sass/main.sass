@@ -257,29 +257,66 @@ section
 
 .price
 	background-color: #e7edf3
-	h2, p
-		color: $h-text		
+	padding-top: 136px
+	padding-bottom: 164px
+	h2
+		color: $h-text
+	p.header-p
+		color: #75888d
+		margin-bottom: 46px
 	&-content
 		grid-template-columns: 1fr 1fr 1fr
-		align-content: center
+		align-items: center
 		.item
-			padding: 100px 30px
+			padding: 47px 33px
 			background-color: #fff
 			border: 1px solid #ccd5df
 			border-radius: 3px
 			text-align: center
 			h3
 				text-transform: uppercase
+				font-family: lato-myproject, sans-serif
+				font-weight: 200
+				font-size: 25px
 			p
 				text-transform: uppercase
+				font-family: lato-myproject, sans-serif
+				font-size: 13.5px
+				line-height: 40px
+				color: #B2B8BE
+				border-top: 1px solid #e2e9f0
+				&.dollars
+					font-size: 56px
+					font-weight: bold
+					color: $accent-orange
+					border: none
+					sup
+						font-size: 36px
+				&.per-month
+					border: none
+					margin-bottom: 21px
 			.button
 				display: inline-block
+				text-decoration: none
+				margin-top: 18px
+				padding: 9px 20px
 		.item-premium
-			padding: 140px 30px
+			padding: 80px 33px
 			background-color: $accent-blue
 			border: none
-			
-
+			h3
+				color: #fff
+			p
+				color: #BDDEFB
+				border-top: 1px solid #8eb8e2
+				&.dollars
+					color: #fff
+					sup
+						font-weight: 200				
+						font-size: 36px
+				&.per-month
+					color: #fff
+					line-height: 30px
 			
 
 @import "media" // Always at the end

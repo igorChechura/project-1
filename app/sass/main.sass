@@ -265,7 +265,7 @@ section
 		color: #75888d
 		margin-bottom: 46px
 	&-content
-		grid-template-columns: 1fr 1fr 1fr
+		grid-template-columns: 1fr 1fr 1fr 
 		align-items: center
 		.item
 			padding: 47px 33px
@@ -317,6 +317,50 @@ section
 				&.per-month
 					color: #fff
 					line-height: 30px
-			
+	
+// Work section
+
+.work
+	padding-top: 154px
+	padding-bottom: 149px
+	h2, p
+		color: $h-text
+	p
+		margin-bottom: 102px
+	&-content
+		grid-template-columns: repeat(4, 1fr)
+		grid-gap: 20px
+		.item
+			padding: 0 20px
+			text-align: center
+			.svg-inline--fa
+				font-size: 72px
+			h3
+				margin-top: 98px
+				margin-bottom: 17px
+				text-transform: uppercase
+				color: $h-text
+				font-family: lato-myproject, sans-serif
+				font-weight: bold
+				font-size: 20px
+				line-height: 22px
+			p
+				margin: 0
+				font-family: opensans-myproject, sans-serif
+				font-size: 13px
+				color: #7A7979
+				line-height: 22px
+	&-button
+		margin-top: 88px
+		a
+			margin: auto
+			padding: 10px 27px
+			text-decoration: none
+
+
+
+
+
+
 
 @import "media" // Always at the end
